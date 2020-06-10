@@ -1,0 +1,499 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #fff;
+  color: #555;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-size: 14px;
+}
+
+
+/* ---- MEDIA QUERIES -------*/
+
+@media (min-width:400px) {
+  body {
+    font-size: 16px;
+  }
+   h1{
+    font-size:  2.2rem;
+    }
+ h2 {
+    font-size:  1.3rem;
+  } 
+  h3 {
+    font-size:  0.8rem;
+  }     
+  h4 {
+    font-size:  0.6rem;
+  } 
+  .menu-icon { 
+    height: 35px;
+    width: auto;
+    }
+}
+
+@media (min-width:600px) {
+  body {
+    font-size: 16px;
+  }
+  h1{
+    font-size:  3rem;
+    }
+ h2 {
+    font-size:  1.6rem;
+  } 
+  h3 {
+    font-size:  0.9rem;
+  }     
+  h4 {
+    font-size:  0.8rem;
+  }  
+  .menu-icon { 
+    height: 40px;
+    width: auto;
+    }
+  
+}
+
+
+@media (min-width:800px) {
+  body {
+    font-size: 18px;
+  }
+  h1{
+    font-size:  4rem;
+    }
+  h2 {
+    font-size:  2rem;
+  } 
+  h3 {
+    font-size:  1.1rem;
+  }     
+   h4 {
+    font-size:  0.9rem;
+  }  
+  .menu-icon { 
+    height: 45px;
+    width: auto;
+    }
+  .logo {
+        font-size: 2rem;        
+    }
+}
+
+@media (min-width:1000px) {
+  body {
+    /* Never get larger than this */
+    font-size: 20px;
+  }
+   h1 {
+    font-size:  5rem;
+  }
+
+    h2 {
+    font-size:  2.6rem;
+  } 
+    h3 {
+    font-size:  1.8rem;
+  }     
+   h4 {
+    font-size:  1.3rem;
+  }  
+  .menu-icon { 
+    height: 60px;
+    width: auto;
+    }
+}
+
+/* ---------end of MEDIA QUERIES --------- */
+
+.row {
+  /* the margin is expressed as top-bottom left-right*/
+  margin: 0, auto;
+  max-width: 1140;
+}
+
+header {
+  /* the linear gradient goes from color A to color A because I only want one color and not two */
+  background-image: linear-gradient(rgba(136, 76, 87, 0.76),rgba(165, 55, 75, 0.31)), url(img/amusement-park.jpg);
+  background-size: 100%;
+  background-position: center;
+  /*setting the height to 100 viewport*/
+  height: 100vh;
+}
+
+.article-text-box {
+  position: absolute;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  /*this transform-translate calculates half of the elements height and width from top and left */
+  transform: translate(-50%, -50%);
+}
+
+.white-space {
+  background-color: white;
+  /*setting the height to 5 viewport*/
+  height: 5vh;
+  width: 90%;
+  margin: auto;
+}
+
+.separator {
+  background-color: black;
+  /*setting the height to 5 viewport*/
+  height: 1.1vh;
+  width: 93%;
+  margin: auto;
+}
+
+.separator-light {
+  background-color: antiquewhite;
+  /*setting the height to 5 viewport*/
+  height: 0.5vh;
+  width: 63%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.separator-dark {
+  background-color: black;
+  /*setting the height to 5 viewport*/
+  height: 0.5vh;
+  width: 53%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.columns {
+    display: flex;
+    height: 100vh;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.columns >div {
+    flex: 1;
+    margin: 5px;
+}
+
+.columns-single-article {
+   display: flex;
+    margin: auto;
+    max-width: 100%;
+    overflow: hidden;
+   
+}
+
+.most-shared {
+    color: antiquewhite;
+    text-align: center;
+    
+}
+
+.gem {
+    color: lightseagreen;
+    font-weight: 600;
+    text-align: center;
+    
+}
+
+.title-single-article {
+  color:white;
+  max-width: 100%;
+    text-align: center;
+    
+}
+
+.title-single-article:hover {
+    color: black;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.title-gem {
+  color:black;
+  max-width: 100%;
+    text-align: center;
+    
+}
+
+.title-gem:hover {
+    color: lightseagreen;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.title-patterns {
+  color:black;
+  max-width: 100%;
+    text-align: center;
+    
+}
+
+.title-patterns:hover {
+    color:white;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.columns-single-article >div {
+    flex: 1;
+    
+}
+
+
+.shorter {
+    height: 70vh;
+}
+
+.one-article {
+    width: 95%;
+    height: 85vh;
+    align-items: stretch;    
+}
+
+.patterns-stretch{
+    height: 65vh;
+    align-items: stretch;    
+}
+
+.patterns {
+    display: flex;
+    height: 70vh;
+    align-items: stretch;
+    margin: auto;
+}
+
+.footer-stretch{
+    height: 25vh;
+    align-items: stretch;    
+}
+
+.image{
+    min-width:100%;
+    min-height:68%;
+    /* the two following lines are to resize and center images in flexbox block*/
+    background-size: cover;
+    background-position: center center;
+}
+
+.image-patterns{
+    min-width:100%;
+    min-height:68%;
+    /* the two following lines are to resize and center images in flexbox block*/
+    background-size: cover;
+    background-position: center center;
+}
+
+.short {
+    min-height: 47%;
+}
+
+.full {
+    min-height: 100%;
+}
+
+.solid-color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%; 
+}
+
+
+
+.week {
+    background-color: slategrey;
+}
+
+.gem {
+    background-color: lightgoldenrodyellow;
+}
+
+.footer-color {
+    background-color: black;
+}
+
+
+.single-titles{
+    max-width: 70%;
+}
+
+.image:hover {
+    opacity: 0.85;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.moms {
+    background-image: url(img/moms.jpg);
+    
+}
+
+.floods {
+    background-image: url(img/wave.jpg);
+}
+
+.drugs {
+    background-image: url(img/drugs.jpg);
+}
+
+.demons {
+    background-image: url(img/demons.jpg);
+}
+
+.gods {
+    background-image: url(img/gods.jpg);
+}
+
+.clothing{
+     background-image: url(img/clothing.jpg);
+}
+
+.china{
+     background-image: url(img/china.jpg);
+}
+
+.patterns-photo{
+    background-image: url(img/patterns.jpg);
+}
+
+h1 {
+  margin: 0;
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 4px;
+  word-spacing: 5px;
+  text-align: center;
+}
+
+h2 {
+  margin: 2%;
+  color: black;
+  font-weight: 800;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  text-align: center;
+  
+}
+
+h4 {
+  margin: 2%;
+  color: #fff;
+  font-weight: 100;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  text-align: center;
+ 
+  
+}
+
+.logo{
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 20px;
+  color: #2a2626;
+  font-weight: 800;
+  word-spacing: 1px;
+  float: left;
+}
+
+.section-title{
+  position: absolute;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  color: #b1aeae;
+  font-weight: 800;
+  word-spacing: 3px;
+  left: 50%;
+  /*this transform-translate calculates half of the elements height and width from top and left */
+  transform: translate(-50%, -50%);
+ 
+}
+
+
+.article-title {
+    padding: 0px;
+    text-align: center;
+    max-width: 100%;
+    min-height:inherit;
+    color: black;
+    background-color: white;
+    justify-content: center;
+}
+
+.article-title:hover {
+    color: grey;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+
+.article-subtitle {
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 10px;
+    text-align: center;
+    max-width: 100%;
+    min-height:inherit;
+    color: black;
+    background-color: antiquewhite;
+    justify-content: center;
+}
+
+.footer-text {
+    padding: 10px;
+    color: lightgrey;
+}
+
+.popular {
+    background-color: powderblue;
+}
+
+.menu-icon {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 100;
+    text-decoration: none;
+    
+}
+
+.btn:hover, 
+.btn:active {
+    background-color: #7b7474;
+}
+
+.btn-article {
+    position: absolute;
+    margin:auto;
+    background-color: #2a2626;
+    color: #fff;
+    border-radius: 13px;
+   
+}
+
+.btn-center {
+    display: flex;
+    justify-content: center;
+}
+
